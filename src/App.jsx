@@ -1,18 +1,19 @@
-import { useState } from 'react'
-
-import './App.css'
-import UseContext from './components/UseContext'
+import { createContext, useState } from "react";
+import "./App.css";
+import MainSection from "./components/MainSection.jsx";
+import UseContext from "./components/UseContext";
+export const AppContext = createContext();
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <AppContext.Provider>
         <UseContext />
+        <MainSection />
       </AppContext.Provider>
     </>
   );
 }
 
-export default App
+export default App;
