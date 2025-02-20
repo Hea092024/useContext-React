@@ -4,7 +4,7 @@ import { AppContext } from "../App";
 
 export default function MainSection() {
 
-    const name = useContext(AppContext)
+    const [name, age] = useContext(AppContext)
     return (
         <>
             <h1>Navnet er { name }</h1>

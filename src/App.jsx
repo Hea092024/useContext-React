@@ -7,10 +7,11 @@ export const AppContext = createContext();
 function App() {
 
   const name = "Hector";
+  const age =41;
 
   return (
     <>
-      <AppContext.Provider value={name}>
+      <AppContext.Provider value={[name, age]}>
         <UseContext />
         <MainSection />
       </AppContext.Provider>
