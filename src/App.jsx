@@ -6,9 +6,11 @@ export const AppContext = createContext();
 
 function App() {
 
+  const name = "Hector";
+
   return (
     <>
-      <AppContext.Provider>
+      <AppContext.Provider value={name}>
         <UseContext />
         <MainSection />
       </AppContext.Provider>
