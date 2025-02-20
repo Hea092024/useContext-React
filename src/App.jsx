@@ -8,9 +8,11 @@ function App() {
 
   return (
     <>
-   <UseContext/>
+      <AppContext.Provider>
+        <UseContext />
+      </AppContext.Provider>
     </>
-  )
+  );
 }
 
 export default App
